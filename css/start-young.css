@@ -157,7 +157,7 @@
     margin-top: 8vh;
 }
 
-.video-heading{
+.video-heading-sy{
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
@@ -566,7 +566,7 @@ html {
 
 
 
-#nav-btn{
+#nav-btn-start-young{
     padding-top: 8px;
     width: 140px;
     height: 40px;
@@ -577,7 +577,7 @@ html {
     color: #FFFFFF;
 }
 
-#nav-btn a{
+#nav-btn-start-young a{
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
@@ -587,7 +587,7 @@ html {
     color: #FFFFFF;
 }
 
-#nav-btn:hover{
+#nav-btn-start-young:hover{
     background: #555555;
     transition: 0.5s;
 }
