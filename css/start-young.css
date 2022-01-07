@@ -510,7 +510,7 @@ html {
     justify-content: space-between;
 }
 
-#nav-logo{
+#nav-logo-clickable{
     display: inline-block;
     margin: 0;
     background: #ffffff;
@@ -522,7 +522,7 @@ html {
     border-top-width: 0;
 }
 
-#nav-logo img{
+#nav-logo-clickable img{
     height: 100px;
     width: 190px;
     margin: 10px 15px;
