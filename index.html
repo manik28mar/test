@@ -50,9 +50,23 @@ f=false,d=document,code={use_existing_jquery:function(){return use_existing_jque
 <!-- End VWO Async SmartCode -->
 	<script>
 		window.VWO = window.VWO || [];
-window.VWO.TRACK_SESSION_COOKIE_EXPIRY_CUSTOM = 0.000140722222222222224; // 30s;
+window.VWO.TRACK_SESSION_COOKIE_EXPIRY_CUSTOM = 0.000540722222222222224; // 30s;
 </script>
-	<script>window.name = "yeah, its overriden"</script>
+<script>
+	window.name = "yeah, its overriden";
+	window.myuuid = getQueryStringValue('id')?getQueryStringValue('id'):'404';
+	window.cookiecount = (document.cookie.length%2==0)?'even':'odd';
+</script>
+<script>
+window.VWO = window.VWO || [];
+// Replace TAG_VALUE with your actual tag value
+window.VWO.push(['tag', 'MyUUID', window.myuuid, 'user']);
+	console.log("\nPushed Custom Dimension: MyUUID" + window.myuuid + "\n");
+
+window.VWO.push(['tag', 'cookiecount', window.cookiecount, 'session']);
+		console.log("\nPushed Custom Dimension: cookiecount" + window.cookiecount + "\n");
+
+</script>
 </head>
 <body>
 
