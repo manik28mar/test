@@ -19,7 +19,6 @@
            
   <!-- Start VWO Async SmartCode -->
 	<link rel="preconnect" href="https://dev.visualwebsiteoptimizer.com" />
-
 <script type='text/javascript' id='vwoCode' nonce='randomNonce123'>
 	function getQueryStringValue (key) {  
 return decodeURIComponent(window.location.search.replace(new RegExp("^(?:.*[&\\?]" + encodeURIComponent(key).replace(/[\.\+\*]/g, "\\$&") + "(?:\\=([^&]*))?)?.*$", "i"), "$1"));  
@@ -35,11 +34,8 @@ hide_element='body',
 /* DO NOT EDIT BELOW THIS LINE */
 f=false,d=document,code={use_existing_jquery:function(){return use_existing_jquery},library_tolerance:function(){return library_tolerance},finish:function(){if(!f){f=true;var e=d.getElementById('_vis_opt_path_hides');if(e)e.parentNode.removeChild(e)}},finished:function(){return f},load:function(e){var t=d.createElement('script');t.fetchPriority='high';t.src=e;t.type='text/javascript';t.innerText;t.onerror=function(){_vwo_code.finish()};d.getElementsByTagName('head')[0].appendChild(t)},init:function(){window.settings_timer=setTimeout(function(){_vwo_code.finish()},settings_tolerance);var e=d.createElement('style'),t=hide_element?hide_element+'{opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important;}':'',i=d.getElementsByTagName('head')[0];e.setAttribute('id','_vis_opt_path_hides');e.setAttribute('nonce',document.querySelector('#vwoCode').nonce);e.setAttribute('type','text/css');if(e.styleSheet)e.styleSheet.cssText=t;else e.appendChild(d.createTextNode(t));i.appendChild(e);this.load('https://dev.visualwebsiteoptimizer.com/j.php?a='+account_id+'&u='+encodeURIComponent(d.URL)+'&f='+ +is_spa+'&vn='+version);return settings_timer}};window._vwo_settings_timer = code.init();return code;}());
 
-	
-	window._vwo_pc_custom = {
-    't': 100, //track
-    'a': 100 //analyze
-};
+
+	</script>
 <!-- End VWO Async SmartCode -->
     
     </head>
@@ -293,13 +289,7 @@ f=false,d=document,code={use_existing_jquery:function(){return use_existing_jque
 
 
     
-    <script src="./js/start-young.js" nonce='randomNonce123'></script>
-    <script type="text/Javascript" nonce='randomNonce123'>
-		var pTag = document.getElementById('acc_id');
-		var acc_id=getQueryStringValue('id')?getQueryStringValue('id'):'586615';
-		pTag.innerHTML += acc_id;
-		console.log('Account ID: => ' + acc_id);
-	</script>
+
     	
 
 </body>
